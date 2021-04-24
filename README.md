@@ -8,7 +8,28 @@ forked from [Airpods Battery Status](https://github.com/delphiki/gnome-airpods-b
 
 Install (https://github.com/JojiiOfficial/LiveBudsCli).
 
+Make a ``` /etc/systemd/system/buds-daemon.service ``` for a systemd based system.
+```
+[Unit]
+Description=Galaxy-Buds Battery Monitor
 
+[Service]
+ExecStart=[path/to/earbuds(from LiveBudsCli)] status -o json > /tmp/budstatus.out
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=default.target
+```
+Or make a shell script for a non-systemd system.
+```
+#!/bin/sh
+
+while true; do
+  [path/to/earbuds(from LiveBudsCli)] status -o json > /tmp/budstatus.out;
+  sleep 2;
+done
+```
 ## Installation
 
 ```shell
