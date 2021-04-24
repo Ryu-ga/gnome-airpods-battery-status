@@ -14,5 +14,5 @@ Install (https://github.com/JojiiOfficial/LiveBudsCli).
 ```shell
 $ mkdir -p ~/.local/share/gnome-shell/extensions/buds-battery-status@Ryu.ga
 $ cd ~/.local/share/gnome-shell/extensions/buds-battery-status@Ryu.ga
-$ git clone https://github.com/Ryu-ga/gnome-airpods-battery-status .
+$ git clone https://github.com/Ryu-ga/gnome-buds-battery-status .
 ```
