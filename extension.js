@@ -53,6 +53,7 @@ class BudsBatteryStatus {
 		this._currentStatusValue = this.getCurrentStatus();
 
 		let payload = this._currentStatusValue.hasOwnProperty('payload') ? this._currentStatusValue.payload : {};
+		if (payload == null) payload = {};
 		let leftcharge = payload.hasOwnProperty('batt_left') ? payload.batt_left : null;
 		let rightcharge = payload.hasOwnProperty('batt_right') ? payload.batt_right : null;
 		let casecharge = payload.hasOwnProperty('batt_case') ? payload.batt_case : null;
