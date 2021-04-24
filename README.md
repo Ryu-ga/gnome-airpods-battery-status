@@ -1,21 +1,18 @@
-# Airpods Battery Status
+# Glaxy Buds Battery Status
 
-A Gnome Shell Extension to display the battery levels of your Airpods (and case) in the top bar.
+A Gnome Shell Extension to display the battery levels of your Galaxy-buds in the top bar.
 
-![Airpods Battery Status](https://github.com/delphiki/gnome-airpods-battery-status/raw/main/screenshot.png)
+forked from [Airpods Battery Status](https://github.com/delphiki/gnome-airpods-battery-status/raw/main/screenshot.png)
 
 ## Requirements
 
-Install [AirStatus](https://github.com/delphiki/AirStatus) as a service, using `/tmp/airstatus.out` as output file.
+Install (https://github.com/JojiiOfficial/LiveBudsCli).
+
 
 ## Installation
 
-Search for "Airpods battery status" on https://extensions.gnome.org/
-
-OR 
-
 ```shell
-$ mkdir -p ~/.local/share/gnome-shell/extensions/airpods-battery-status@ju.wtf
-$ cd ~/.local/share/gnome-shell/extensions/airpods-battery-status@ju.wtf
-$ git clone https://github.com/delphiki/gnome-airpods-battery-status .
+$ mkdir -p ~/.local/share/gnome-shell/extensions/buds-battery-status@Ryu.ga
+$ cd ~/.local/share/gnome-shell/extensions/buds-battery-status@Ryu.ga
+$ git clone https://github.com/Ryu-ga/gnome-airpods-battery-status .
 ```
